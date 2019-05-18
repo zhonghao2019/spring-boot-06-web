@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <table border="1px" align="center">
+        <tr>
+            <td>姓名</td>
+            <td>性别</td>
+        </tr>
+        <tr th:each="user : ${userList}">
+            <td th:text="${user.username}"></td>
+            <td th:text="${user.gender == 2? '男':'女'}"></td>
+        </tr>
+    </table>
+</body>
+</html>

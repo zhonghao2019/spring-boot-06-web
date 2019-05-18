@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>success</h1>
+    <h1 th:text="${name}"></h1>
+
+    <!--文件名::片段名-->
+    <div th:replace="common :: common1"></div>
+    <!--id选择器-->
+    <div th:replace="common :: #common2"></div>
+    <!--类选择器-->
+    <div th:replace="common :: .common3"></div>
+</body>
+</html>
